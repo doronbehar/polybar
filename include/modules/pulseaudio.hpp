@@ -50,6 +50,9 @@ namespace modules {
     int m_interval{5};
     atomic<bool> m_muted{false};
     atomic<int> m_volume{0};
+    string m_headphone_icon{};
+    string m_speaker_icon{};
+    string m_hdmi_icon{};
   };
 }
 
