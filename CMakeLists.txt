@@ -83,9 +83,9 @@ set(FONT_FIXED "fixed:pixelsize=10")
 set(FONT_UNIFONT "unifont:fontformat=truetype")
 set(FONT_SIJI "siji:pixelsize=10")
 
-queryfont(FONT_FIXED ${FONT_FIXED} FIELDS family pixelsize)
-queryfont(FONT_UNIFONT ${FONT_UNIFONT} FIELDS family fontformat)
-queryfont(FONT_SIJI ${FONT_SIJI} FIELDS family pixelsize)
+# queryfont(FONT_FIXED ${FONT_FIXED} FIELDS family pixelsize)
+# queryfont(FONT_UNIFONT ${FONT_UNIFONT} FIELDS family fontformat)
+# queryfont(FONT_SIJI ${FONT_SIJI} FIELDS family pixelsize)
 
 # Strip disabled modules {{{
 
