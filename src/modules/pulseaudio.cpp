@@ -108,14 +108,14 @@ namespace modules {
     // Replace label tokens
     if (m_label_volume) {
       m_label_volume->reset_tokens();
+      m_label_volume->replace_token("%percentage%", to_string(m_volume));
       m_label_volume->replace_token("%decibels%", string_util::floating_point(m_decibels, 2, true));
-      m_label_volume->replace_token("%port-icon%", port_icon());
     }
 
     if (m_label_muted) {
       m_label_muted->reset_tokens();
+      m_label_muted->replace_token("%percentage%", to_string(m_volume));
       m_label_muted->replace_token("%decibels%", string_util::floating_point(m_decibels, 2, true));
-      m_label_volume->replace_token("%port-icon%", port_icon());
     }
 
     return true;
